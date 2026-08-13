@@ -1,25 +1,328 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
-    <title>QBlock</title>
-    <meta name="description" content="QBlock — built on Replit. Update this description to reflect the app." />
-    <meta name="robots" content="index, follow" />
-    <meta property="og:title" content="QBlock" />
-    <meta property="og:description" content="QBlock — built on Replit. Update this description to reflect the app." />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#fff9e6" />
+    <meta
+      name="description"
+      content="QBLOCK is a bright new block-game universe by Yup. Play, create, and connect with friends."
+    />
+    <meta property="og:title" content="QBLOCK — Your next block adventure" />
+    <meta
+      property="og:description"
+      content="Play, create, and connect in QBLOCK, a bright new block-game universe by Yup."
+    />
     <meta property="og:type" content="website" />
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="QBlock" />
-    <meta name="twitter:description" content="QBlock — built on Replit. Update this description to reflect the app." />
-    <link rel="icon" type="image/svg+xml" href="/Tada-tada-boom/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/Tada-tada-boom/assets/index-iDbwkpRy.js"></script>
-    <link rel="stylesheet" crossorigin href="/Tada-tada-boom/assets/index-C8H9Y5ay.css">
+    <title>QBLOCK — Your next block adventure</title>
+    <link rel="icon" href="assets/yup-logo.png" type="image/png" />
+    <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <header class="site-header">
+      <div class="container header-inner">
+        <a class="brand" href="#top" aria-label="QBLOCK home">
+          <span class="brand-mark" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </span>
+          <span class="brand-word">QBLOCK</span>
+        </a>
+
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="#world">The world</a>
+          <a href="#games">Games</a>
+          <a href="#faq">FAQ</a>
+        </nav>
+
+        <a class="button button-small button-dark header-cta" href="https://discord.gg/UUkcsraXME" target="_blank" rel="noreferrer">
+          Join Discord <span aria-hidden="true">↗</span>
+        </a>
+
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav" aria-label="Open menu">
+          <span></span><span></span>
+        </button>
+      </div>
+      <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
+        <a href="#world">The world</a>
+        <a href="#games">Games</a>
+        <a href="#faq">FAQ</a>
+        <a href="https://discord.gg/UUkcsraXME" target="_blank" rel="noreferrer">Join Discord <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-grid" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-one" aria-hidden="true"></div>
+        <div class="hero-glow hero-glow-two" aria-hidden="true"></div>
+        <div class="container hero-inner">
+          <div class="hero-copy reveal">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> A new block universe by Yup</div>
+            <h1>Make your<br /><span>next move.</span></h1>
+            <p class="hero-lede">
+              Welcome to QBLOCK — a bright, block-built playground where every match
+              is a new story and every player gets to shape the fun.
+            </p>
+            <div class="hero-actions">
+              <a class="button button-primary" href="#games">Explore the world <span aria-hidden="true">→</span></a>
+              <a class="text-link" href="https://discord.gg/UUkcsraXME" target="_blank" rel="noreferrer">
+                Meet the players <span aria-hidden="true">↗</span>
+              </a>
+            </div>
+            <div class="hero-footnote">
+              <span class="status-dot"></span>
+              <span>Something fun is loading in</span>
+            </div>
+          </div>
+
+          <div class="hero-art reveal reveal-delay" aria-label="Two QBLOCK characters" role="img">
+            <div class="art-orbit art-orbit-one" aria-hidden="true"></div>
+            <div class="art-orbit art-orbit-two" aria-hidden="true"></div>
+            <div class="art-sticker sticker-star" aria-hidden="true">+</div>
+            <div class="art-sticker sticker-block" aria-hidden="true"></div>
+            <div class="character-card character-pink">
+              <div class="character-label">QBLOCK player <span>01</span></div>
+              <img src="assets/qblock-character-pink.png" alt="Pink-haired QBLOCK player character" />
+            </div>
+            <div class="character-card character-blue">
+              <div class="character-label">QBLOCK player <span>02</span></div>
+              <img src="assets/qblock-character-blue.png" alt="Blue-haired QBLOCK player character" />
+            </div>
+            <div class="art-caption">
+              <span class="caption-line"></span>
+              <span>There’s room for<br /><strong>your story.</strong></span>
+            </div>
+          </div>
+        </div>
+        <a class="scroll-cue" href="#world" aria-label="Scroll to discover QBLOCK">
+          <span>Scroll to discover</span>
+          <span class="scroll-arrow">↓</span>
+        </a>
+      </section>
+
+      <section class="world-section section-pad" id="world">
+        <div class="container">
+          <div class="section-intro reveal">
+            <div>
+              <div class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> The QBLOCK idea</div>
+              <h2>Built for players<br /><em>with big ideas.</em></h2>
+            </div>
+            <p>
+              QBLOCK is a platform for block-based games that feel easy to pick up,
+              hard to put down, and even better with friends. Start with a quick match.
+              Stay for the worlds you make.
+            </p>
+          </div>
+
+          <div class="feature-grid">
+            <article class="feature-card feature-yellow reveal">
+              <div class="feature-icon icon-play" aria-hidden="true"><span></span></div>
+              <div>
+                <span class="card-kicker">01 / PLAY</span>
+                <h3>Jump right in</h3>
+                <p>Fast, friendly games with just enough chaos to keep every round fresh.</p>
+              </div>
+              <span class="card-number">01</span>
+            </article>
+            <article class="feature-card feature-lilac reveal reveal-delay">
+              <div class="feature-icon icon-create" aria-hidden="true"><span></span><span></span><span></span></div>
+              <div>
+                <span class="card-kicker">02 / CREATE</span>
+                <h3>Build your thing</h3>
+                <p>Turn an idea into a place people want to explore, one block at a time.</p>
+              </div>
+              <span class="card-number">02</span>
+            </article>
+            <article class="feature-card feature-blue reveal">
+              <div class="feature-icon icon-friends" aria-hidden="true"><span></span><span></span></div>
+              <div>
+                <span class="card-kicker">03 / CONNECT</span>
+                <h3>Bring your people</h3>
+                <p>Make memories with friends, rivals, and the next player you meet.</p>
+              </div>
+              <span class="card-number">03</span>
+            </article>
+            <article class="feature-card feature-peach reveal reveal-delay">
+              <div class="feature-icon icon-avatar" aria-hidden="true"><span></span></div>
+              <div>
+                <span class="card-kicker">04 / EXPRESS</span>
+                <h3>Make it yours</h3>
+                <p>Show up as yourself, or as whoever the next adventure needs you to be.</p>
+              </div>
+              <span class="card-number">04</span>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="games-section section-pad" id="games">
+        <div class="container">
+          <div class="games-heading reveal">
+            <div>
+              <div class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> Official worlds</div>
+              <h2>Pick a game.<br /><em>Make it yours.</em></h2>
+            </div>
+            <p>Four ways to play. Zero wrong answers.</p>
+          </div>
+
+          <div class="game-grid">
+            <article class="game-card game-bedwars reveal">
+              <div class="game-visual">
+                <span class="visual-sun"></span>
+                <span class="cloud cloud-one"></span><span class="cloud cloud-two"></span>
+                <span class="island island-one"></span><span class="island island-two"></span>
+                <span class="bed-shape"></span>
+                <span class="visual-label">01</span>
+              </div>
+              <div class="game-info">
+                <div><span class="game-type">Team strategy</span><h3>BedWars</h3></div>
+                <span class="round-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p>Protect your bed, break theirs, and make every bridge count.</p>
+            </article>
+            <article class="game-card game-skyblock reveal reveal-delay">
+              <div class="game-visual">
+                <span class="visual-sun"></span>
+                <span class="sky-cloud cloud-one"></span><span class="sky-cloud cloud-two"></span>
+                <span class="sky-island island-one"></span><span class="sky-island island-two"></span>
+                <span class="tree-trunk"></span><span class="tree-top"></span>
+                <span class="visual-label">02</span>
+              </div>
+              <div class="game-info">
+                <div><span class="game-type">Build &amp; grow</span><h3>Skyblock</h3></div>
+                <span class="round-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p>Start with almost nothing. Build something impossible in the sky.</p>
+            </article>
+            <article class="game-card game-spleef reveal">
+              <div class="game-visual">
+                <span class="spot spot-one"></span><span class="spot spot-two"></span>
+                <span class="spleef-platform"></span>
+                <span class="spleef-player player-one"></span><span class="spleef-player player-two"></span>
+                <span class="visual-label">03</span>
+              </div>
+              <div class="game-info">
+                <div><span class="game-type">Last player standing</span><h3>Spleef</h3></div>
+                <span class="round-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p>Dig fast, move smarter, and leave the floor to everyone else.</p>
+            </article>
+            <article class="game-card game-tnt reveal reveal-delay">
+              <div class="game-visual">
+                <span class="tnt-cloud"></span>
+                <span class="tnt-stack tnt-one"></span><span class="tnt-stack tnt-two"></span>
+                <span class="tnt-fuse"></span><span class="tnt-spark">+</span>
+                <span class="visual-label">04</span>
+              </div>
+              <div class="game-info">
+                <div><span class="game-type">Fast &amp; explosive</span><h3>TNT Rush</h3></div>
+                <span class="round-arrow" aria-hidden="true">↗</span>
+              </div>
+              <p>Light the fuse, trust your instincts, and run toward the fun.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery-section">
+        <div class="container gallery-inner">
+          <div class="gallery-copy reveal">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> Made to be shared</div>
+            <h2>Every block<br /><span>has a story.</span></h2>
+            <p>
+              The best part of a game is the moment you look around and realize
+              you’re already making a memory.
+            </p>
+            <a class="button button-light" href="https://discord.gg/UUkcsraXME" target="_blank" rel="noreferrer">Find your people <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="gallery-stage reveal reveal-delay">
+            <div class="gallery-orb orb-one" aria-hidden="true"></div>
+            <div class="gallery-orb orb-two" aria-hidden="true"></div>
+            <div class="gallery-card gallery-card-main">
+              <div class="gallery-card-top"><span>QBLOCK / MOMENT 001</span><span>PLAYERS ONLINE</span></div>
+              <div class="pixel-scene">
+                <span class="scene-sky"></span>
+                <span class="scene-cloud scene-cloud-one"></span><span class="scene-cloud scene-cloud-two"></span>
+                <span class="scene-mountain scene-mountain-one"></span><span class="scene-mountain scene-mountain-two"></span>
+                <span class="scene-ground"></span><span class="scene-tree"></span>
+                <span class="scene-player"></span><span class="scene-player-shadow"></span>
+              </div>
+              <div class="gallery-card-bottom"><strong>There’s always<br />another world.</strong><span class="mini-spark">✦</span></div>
+            </div>
+            <div class="gallery-note">built with<br /><strong>curiosity</strong></div>
+          </div>
+        </div>
+      </section>
+
+      <section class="faq-section section-pad" id="faq">
+        <div class="container faq-layout">
+          <div class="faq-intro reveal">
+            <div class="eyebrow eyebrow-dark"><span class="eyebrow-dot"></span> Good to know</div>
+            <h2>Questions?<br /><em>We’ve got you.</em></h2>
+            <p>Still curious? Come say hi in Discord — we’re building this together.</p>
+            <a class="button button-outline" href="https://discord.gg/UUkcsraXME" target="_blank" rel="noreferrer">Join Discord <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="faq-list reveal reveal-delay">
+            <details open>
+              <summary>Is QBLOCK free?<span class="faq-plus" aria-hidden="true"></span></summary>
+              <p>QBLOCK is being made to be easy to jump into. More details about access and availability will be shared as the world gets closer.</p>
+            </details>
+            <details>
+              <summary>Can I create my own games?<span class="faq-plus" aria-hidden="true"></span></summary>
+              <p>Creating is at the heart of QBLOCK. We’re shaping the tools so your ideas can become experiences other players want to play.</p>
+            </details>
+            <details>
+              <summary>Will there be a PC version?<span class="faq-plus" aria-hidden="true"></span></summary>
+              <p>We’re exploring the best ways to bring QBLOCK to more players. Keep an eye on the community for the latest updates.</p>
+            </details>
+            <details>
+              <summary>Can I play with friends?<span class="faq-plus" aria-hidden="true"></span></summary>
+              <p>Absolutely. QBLOCK is made for shared adventures, friendly competition, and those “one more round” moments.</p>
+            </details>
+            <details>
+              <summary>How often is QBLOCK updated?<span class="faq-plus" aria-hidden="true"></span></summary>
+              <p>The world will keep growing with new games, ideas, and player feedback. Join Discord to follow along.</p>
+            </details>
+          </div>
+        </div>
+      </section>
+
+      <section class="community-section">
+        <div class="community-grid" aria-hidden="true"></div>
+        <div class="community-shape shape-left" aria-hidden="true"></div>
+        <div class="community-shape shape-right" aria-hidden="true"></div>
+        <div class="container community-inner reveal">
+          <div class="community-yup">
+            <span>Made with big ideas by</span>
+            <img src="assets/yup-logo.png" alt="Yup" />
+          </div>
+          <div class="community-copy">
+            <div class="eyebrow"><span class="eyebrow-dot"></span> Come build with us</div>
+            <h2>The fun is<br /><em>just beginning.</em></h2>
+            <p>Meet the people making QBLOCK, swap ideas, and be first to see what’s next.</p>
+            <a class="button button-light" href="https://discord.gg/UUkcsraXME" target="_blank" rel="noreferrer">Join the Discord <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-main">
+        <a class="brand footer-brand" href="#top" aria-label="QBLOCK home">
+          <span class="brand-mark" aria-hidden="true">
+            <span></span><span></span><span></span><span></span>
+          </span>
+          <span class="brand-word">QBLOCK</span>
+        </a>
+        <p>A new block universe by Yup.</p>
+        <a class="footer-discord" href="https://discord.gg/UUkcsraXME" target="_blank" rel="noreferrer">Discord <span aria-hidden="true">↗</span></a>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Yup. All rights reserved.</span>
+        <span>Made for curious players.</span>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
   </body>
 </html>
