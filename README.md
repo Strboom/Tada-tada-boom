@@ -12,3 +12,5 @@ This folder is a self-contained static website for QBLOCK by Yup.
 Open `index.html` directly in a browser or serve this folder with any static web server.
 
 The page intentionally includes Discord as the only community call-to-action.
+
+The download button is intentionally inactive until the QBLOCK APK link is ready.

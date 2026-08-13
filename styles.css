@@ -46,6 +46,9 @@ button { font: inherit; }
   min-height: 88px;
 }
 .brand { display: inline-flex; align-items: center; gap: 11px; font-size: 16px; font-weight: 800; letter-spacing: -.04em; }
+.yup-logo-wrap { display: grid; place-items: center; width: 42px; height: 29px; overflow: hidden; }
+.yup-logo-wrap img { display: block; width: 49px; height: 33px; object-fit: contain; }
+.brand-divider { width: 1px; height: 22px; margin: 0 2px 0 1px; background: rgba(17, 22, 48, .2); transform: rotate(15deg); }
 .brand-mark {
   display: grid;
   grid-template-columns: repeat(2, 8px);
@@ -76,7 +79,11 @@ button { font: inherit; }
 .button:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(30, 39, 100, .13); }
 .button-small { padding: 12px 17px; font-size: 11px; }
 .button-dark { background: var(--ink); color: var(--white); }
-.button-primary { background: var(--yellow); color: var(--ink); }
+.button-primary { background: linear-gradient(135deg, #ffe889, var(--yellow)); color: var(--ink); box-shadow: 0 8px 18px rgba(223, 178, 37, .2); }
+.button-discord { color: white; background: linear-gradient(135deg, #566dff, #3545d7); box-shadow: 0 9px 20px rgba(58, 72, 200, .25); }
+.button-download { color: #747789; background: rgba(255, 255, 255, .68); border-color: rgba(17, 22, 48, .18); box-shadow: inset 0 1px 0 rgba(255, 255, 255, .8); }
+.button-download:disabled { cursor: not-allowed; opacity: .72; }
+.button-download:disabled:hover { transform: none; box-shadow: inset 0 1px 0 rgba(255, 255, 255, .8); }
 .button-light { background: var(--white); color: var(--ink); }
 .button-outline { border-color: var(--line); background: transparent; }
 .menu-toggle { display: none; border: 0; background: none; padding: 8px 0 8px 8px; cursor: pointer; }
@@ -87,7 +94,7 @@ button { font: inherit; }
   position: relative;
   min-height: 790px;
   overflow: hidden;
-  background: var(--yellow-soft);
+  background: radial-gradient(circle at 83% 36%, rgba(255, 255, 255, .55), transparent 22%), linear-gradient(124deg, #fff9df 0%, var(--yellow-soft) 57%, #fff0a3 100%);
 }
 .hero-inner { position: relative; z-index: 2; display: grid; grid-template-columns: .9fr 1.1fr; align-items: center; min-height: 790px; gap: 10px; padding-top: 45px; }
 .hero-grid, .community-grid {
@@ -106,9 +113,7 @@ button { font: inherit; }
 .hero h1 { margin: 22px 0 22px; font-size: clamp(60px, 7.2vw, 102px); line-height: .94; letter-spacing: -.09em; font-weight: 800; }
 .hero h1 span, h2 em { color: var(--blue); font-style: normal; }
 .hero-lede { max-width: 390px; margin: 0; color: #575a6b; font-size: 15px; line-height: 1.8; }
-.hero-actions { display: flex; align-items: center; gap: 25px; margin-top: 31px; }
-.text-link { font-size: 12px; font-weight: 800; border-bottom: 1px solid rgba(17, 22, 48, .3); padding-bottom: 4px; }
-.text-link:hover { border-color: var(--ink); }
+.hero-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; max-width: 600px; margin-top: 31px; }
 .hero-footnote { display: flex; align-items: center; gap: 8px; margin-top: 67px; color: #77796e; font: 10px var(--mono); letter-spacing: .02em; }
 .status-dot { width: 7px; height: 7px; border-radius: 50%; background: #73c58c; box-shadow: 0 0 0 5px rgba(115, 197, 140, .18); }
 .hero-art { position: relative; height: 620px; }
