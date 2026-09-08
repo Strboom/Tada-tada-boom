@@ -1,0 +1,184 @@
+/* Explicit light theme layer. Loaded last so cached/dark legacy rules cannot win. */
+html,
+body {
+  background: #f7f7f5 !important;
+}
+
+.qblock-page {
+  --q-ink: #191a1e !important;
+  --q-muted: #74777c !important;
+  --q-line: #e2e3e1 !important;
+  --q-paper: #f7f7f5 !important;
+  --q-soft: #eeeeec !important;
+  --q-orange: #ff542b !important;
+  --q-orange-dark: #d94120 !important;
+  --q-peach: #fff0e9 !important;
+  --q-yellow: #ff9a73 !important;
+  background:
+    radial-gradient(circle at 85% 12%, rgba(255, 104, 67, .1), transparent 23rem),
+    radial-gradient(circle at 5% 52%, rgba(24, 25, 29, .035), transparent 28rem),
+    #f7f7f5 !important;
+  color: #191a1e !important;
+}
+
+.qblock-nav {
+  border-color: rgba(25, 26, 30, .1) !important;
+  background: rgba(255, 255, 254, .9) !important;
+  box-shadow: 0 12px 32px rgba(32, 30, 27, .06), inset 0 1px rgba(255, 255, 255, .8) !important;
+}
+
+.qblock-brand,
+.qblock-nav-links a,
+.qblock-menu-button {
+  color: #191a1e !important;
+}
+
+.qblock-brand-avatar,
+.qblock-mark {
+  width: 30px !important;
+  height: 30px !important;
+  border: 1px solid rgba(25, 26, 30, .14) !important;
+  border-radius: 9px !important;
+  object-fit: cover !important;
+  object-position: center !important;
+  transform: none !important;
+  background: #fff url("/assets/qblock-avatar.png") center / cover no-repeat !important;
+  box-shadow: 0 5px 15px rgba(25, 26, 30, .12) !important;
+}
+
+.qblock-mark {
+  font-size: 0 !important;
+}
+
+.qblock-mark::after {
+  display: none !important;
+}
+
+.qblock-nav-cta {
+  color: #fff !important;
+  background: #191a1e !important;
+  border-color: #191a1e !important;
+}
+
+.qblock-nav-cta:hover {
+  color: #fff !important;
+  background: #ff542b !important;
+}
+
+.qblock-hero::before {
+  background-image:
+    linear-gradient(rgba(25, 26, 30, .055) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(25, 26, 30, .055) 1px, transparent 1px) !important;
+  opacity: .42 !important;
+}
+
+.qblock-hero h1,
+.qblock-section h2,
+.qblock-creation-panel h2,
+.qblock-community-panel h2,
+.qblock-availability h2 {
+  color: #191a1e !important;
+}
+
+.qblock-hero h1 em,
+.qblock-creation-panel h2 span,
+.qblock-kicker,
+.qblock-section-label {
+  color: #ff542b !important;
+}
+
+.qblock-hero-copy,
+.qblock-creation-panel p,
+.qblock-community p,
+.qblock-availability-copy {
+  color: #74777c !important;
+}
+
+.qblock-button-dark {
+  color: #fff !important;
+  background: #191a1e !important;
+}
+
+.qblock-button-dark:hover {
+  background: #ff542b !important;
+}
+
+.qblock-button-light {
+  color: #191a1e !important;
+  background: rgba(255, 255, 255, .78) !important;
+  border-color: rgba(25, 26, 30, .14) !important;
+}
+
+.qblock-button-light:hover {
+  color: #d94120 !important;
+  background: #fff !important;
+  border-color: rgba(255, 84, 43, .42) !important;
+}
+
+.qblock-device-stage::before {
+  background: radial-gradient(circle, rgba(255, 104, 67, .16), transparent 68%) !important;
+}
+
+.qblock-phone-wrap {
+  filter: drop-shadow(25px 30px 24px rgba(35, 29, 26, .2)) !important;
+}
+
+.qblock-creation-panel,
+.qblock-community-panel,
+.qblock-availability {
+  border: 1px solid rgba(25, 26, 30, .1) !important;
+  border-radius: 22px !important;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, .96), rgba(244, 244, 242, .9)),
+    #fff !important;
+  color: #191a1e !important;
+  box-shadow: 0 24px 58px rgba(31, 30, 27, .07), inset 0 1px rgba(255, 255, 255, .95) !important;
+}
+
+.qblock-creation-panel {
+  min-height: 460px !important;
+  background:
+    radial-gradient(circle at 84% 40%, rgba(255, 84, 43, .09), transparent 20rem),
+    linear-gradient(145deg, rgba(255, 255, 255, .96), rgba(239, 239, 237, .9)) !important;
+}
+
+.qblock-creation-panel::after {
+  border-color: rgba(25, 26, 30, .1) !important;
+}
+
+.qblock-community-side {
+  border-color: rgba(255, 84, 43, .2) !important;
+  background: rgba(255, 255, 255, .72) !important;
+}
+
+.qblock-community-side p {
+  color: #d94120 !important;
+}
+
+.qblock-store-button {
+  color: #191a1e !important;
+  background: #fff !important;
+  border-color: rgba(25, 26, 30, .12) !important;
+}
+
+.qblock-store-button > span:first-child {
+  color: #fff !important;
+  background: #ff542b !important;
+}
+
+.qblock-footer {
+  border-top-color: rgba(25, 26, 30, .1) !important;
+  background: #f1f1ef !important;
+}
+
+.qblock-footer-note,
+.qblock-footer-links a {
+  color: #777a7e !important;
+}
+
+@media (max-width: 850px) {
+  .qblock-nav-links {
+    background: #fff !important;
+    border-color: #e2e3e1 !important;
+  }
+}
