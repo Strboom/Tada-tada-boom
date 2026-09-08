@@ -280,17 +280,14 @@ body {
 
 .qblock-store-button > span:last-child {
   min-width: 0 !important;
+  width: 100% !important;
   overflow: hidden !important;
   display: block !important;
   text-align: left !important;
 }
 
 .qblock-store-button::after {
-  content: '↗' !important;
-  display: block !important;
-  color: #8b8e92 !important;
-  font-size: 1rem !important;
-  line-height: 1 !important;
+  display: none !important;
 }
 
 .qblock-store-button small {
@@ -342,24 +339,64 @@ body {
 .qblock-availability {
   grid-template-columns: minmax(0, 1fr) minmax(300px, 390px) !important;
   align-items: center !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  overflow: hidden !important;
 }
 
 .qblock-store-actions {
   display: flex !important;
   flex-direction: column !important;
   width: 100% !important;
+  max-width: 100% !important;
   min-width: 0 !important;
   gap: 10px !important;
 }
 
 .qblock-store-button {
   display: grid !important;
-  grid-template-columns: 40px minmax(0, 1fr) 18px !important;
+  grid-template-columns: 38px minmax(0, 1fr) !important;
   align-items: center !important;
   width: 100% !important;
+  max-width: 100% !important;
   height: 76px !important;
   min-height: 76px !important;
+  min-width: 0 !important;
   margin: 0 !important;
+  overflow: hidden !important;
+  border-color: #191a1e !important;
+  background: #191a1e !important;
+  box-shadow: 0 9px 20px rgba(25, 26, 30, .16) !important;
+}
+
+.qblock-store-button:hover {
+  border-color: #303136 !important;
+  background: #303136 !important;
+  box-shadow: 0 12px 24px rgba(25, 26, 30, .2) !important;
+}
+
+.qblock-store-button > span:first-child {
+  background: transparent !important;
+}
+
+.qblock-apple-icon {
+  color: #fff !important;
+}
+
+.qblock-play-icon {
+  background: transparent !important;
+}
+
+.qblock-store-button small {
+  color: #c2c4c7 !important;
+  font-size: .58rem !important;
+  letter-spacing: .01em !important;
+}
+
+.qblock-store-button strong {
+  color: #fff !important;
+  font-size: 1rem !important;
+  letter-spacing: -.025em !important;
 }
 
 @media (max-width: 850px) {
