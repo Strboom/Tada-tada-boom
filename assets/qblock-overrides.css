@@ -1,0 +1,33 @@
+.qblock-page {
+  --q-yellow: #f6b6a4;
+}
+
+.qblock-menu-button {
+  font-family: inherit;
+  font-size: 1.25rem;
+  line-height: 1;
+}
+
+.qblock-store-button > span:first-child {
+  display: inline-grid;
+  width: 26px;
+  height: 26px;
+  place-items: center;
+  border-radius: 8px;
+  color: #fff;
+  background: var(--q-orange);
+  font-size: .72rem;
+}
+
+@media (max-width: 850px) {
+  .qblock-menu-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    border: 0;
+    color: var(--q-ink);
+    background: transparent;
+    cursor: pointer;
+  }
+}

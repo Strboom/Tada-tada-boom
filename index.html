@@ -2,25 +2,193 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>QBLOCK — Make your next move</title>
-    <meta name="description" content="QBLOCK is a bright new block-game universe by Yup. Play, create, and connect with friends." />
+    <meta name="description" content="QBLOCK is a block-built playground for people who play, create, connect, and express." />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://qblock.site/" />
-    <meta property="og:title" content="QBLOCK — Your next block adventure" />
-    <meta property="og:description" content="Play, create, and connect with friends in a new block-game universe by Yup." />
+    <meta property="og:title" content="QBLOCK — Make your next move" />
+    <meta property="og:description" content="A place to jump in, build out, and find the people who make an idea more fun." />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="QBLOCK — Your next block adventure" />
-    <meta name="twitter:description" content="Play, create, and connect with friends in a new block-game universe by Yup." />
+    <meta name="twitter:title" content="QBLOCK — Make your next move" />
+    <meta name="twitter:description" content="A block-built playground made for participation." />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <script type="module" crossorigin src="/assets/index-aE5-wXOB.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-lU6shNhz.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/assets/qblock.css" />
+    <link rel="stylesheet" href="/assets/qblock-overrides.css" />
   </head>
   <body>
-    <div id="root"></div>
+    <main class="qblock-page" id="top">
+      <header class="qblock-nav-shell qblock-reveal">
+        <nav class="qblock-nav" aria-label="Main navigation">
+          <a class="qblock-brand" href="#top" aria-label="QBLOCK home">
+            <i class="qblock-mark" aria-hidden="true"></i>
+            QBLOCK
+          </a>
+          <div class="qblock-nav-links" id="primary-navigation">
+            <a href="#why">Why QBLOCK</a>
+            <a href="#community">Community</a>
+            <a href="#download" class="qblock-nav-cta">Get the feeling <span aria-hidden="true">→</span></a>
+          </div>
+          <button class="qblock-menu-button" id="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">
+            <span aria-hidden="true">☰</span>
+          </button>
+        </nav>
+      </header>
+
+      <section class="qblock-hero" aria-labelledby="hero-title">
+        <div class="qblock-hero-grid">
+          <div>
+            <div class="qblock-kicker qblock-reveal qblock-reveal-delay-1">
+              <i class="qblock-kicker-dot" aria-hidden="true"></i>
+              A block-built playground
+            </div>
+            <h1 id="hero-title" class="qblock-reveal qblock-reveal-delay-1">
+              Make your
+              <em>next move.</em>
+            </h1>
+            <p class="qblock-hero-copy qblock-reveal qblock-reveal-delay-2">
+              A place to jump in, build out, and find the people who make an idea more fun.
+              QBLOCK is made for participation.
+            </p>
+            <div class="qblock-hero-actions qblock-reveal qblock-reveal-delay-3">
+              <a class="qblock-button qblock-button-dark" href="#why">See how it works <span aria-hidden="true">↘</span></a>
+              <a class="qblock-button qblock-button-light" href="#community">Meet the community <span aria-hidden="true">◎</span></a>
+            </div>
+            <div class="qblock-hero-note qblock-reveal qblock-reveal-delay-3">
+              <span aria-hidden="true"></span>
+              Early access is opening up
+            </div>
+          </div>
+
+          <div class="qblock-device-stage qblock-reveal qblock-reveal-delay-2">
+            <div class="qblock-corner-label qblock-mono">Scroll to explore / 001</div>
+            <div class="qblock-orbit qblock-orbit-top">
+              <span class="qblock-orbit-mark" aria-hidden="true">✦</span>
+              Your ideas, in blocks
+            </div>
+            <div class="qblock-phone-wrap">
+              <img src="/assets/qblock-phone.png" alt="QBLOCK mobile app preview" />
+            </div>
+            <div class="qblock-orbit qblock-orbit-bottom">
+              <span class="qblock-orbit-mark" aria-hidden="true">◎</span>
+              Built to share
+            </div>
+          </div>
+        </div>
+        <div class="qblock-scroll-cue">Keep going</div>
+      </section>
+
+      <div class="qblock-marquee" aria-label="QBLOCK principles">
+        <div class="qblock-marquee-track">
+          <div class="qblock-marquee-row">
+            <span>Play</span><span>Create</span><span>Connect</span><span>Express</span><span>Make room for ideas</span>
+          </div>
+          <div class="qblock-marquee-row" aria-hidden="true">
+            <span>Play</span><span>Create</span><span>Connect</span><span>Express</span><span>Make room for ideas</span>
+          </div>
+        </div>
+      </div>
+
+      <section class="qblock-section" id="why" aria-labelledby="pillars-title">
+        <div class="qblock-section-intro">
+          <div>
+            <p class="qblock-section-label">The QBLOCK point of view</p>
+            <h2 id="pillars-title">There is more than one way in.</h2>
+          </div>
+          <p>
+            Some days you want a quick win. Some days you want to start with a blank space.
+            QBLOCK leaves the door open for both.
+          </p>
+        </div>
+        <div class="qblock-pillars">
+          <article class="qblock-pillar qblock-pillar-play">
+            <span class="qblock-pillar-number">01</span>
+            <h3>Play</h3>
+            <p>Drop in quickly, find your rhythm, and make room for the next surprise.</p>
+            <i class="qblock-pillar-art" aria-hidden="true"></i>
+          </article>
+          <article class="qblock-pillar qblock-pillar-create">
+            <span class="qblock-pillar-number">02</span>
+            <h3>Create</h3>
+            <p>Start with simple pieces. Shape them into something unmistakably yours.</p>
+            <i class="qblock-pillar-art" aria-hidden="true"></i>
+          </article>
+          <article class="qblock-pillar qblock-pillar-connect">
+            <span class="qblock-pillar-number">03</span>
+            <h3>Connect</h3>
+            <p>Bring people into the idea, not just the finished result.</p>
+            <i class="qblock-pillar-art" aria-hidden="true"></i>
+          </article>
+          <article class="qblock-pillar qblock-pillar-express">
+            <span class="qblock-pillar-number">04</span>
+            <h3>Express</h3>
+            <p>Your point of view belongs in the world you build.</p>
+            <i class="qblock-pillar-art" aria-hidden="true"></i>
+          </article>
+        </div>
+      </section>
+
+      <section class="qblock-section qblock-creation" aria-labelledby="create-title">
+        <div class="qblock-creation-panel">
+          <p class="qblock-section-label">A little structure. A lot of possibility.</p>
+          <h2 id="create-title">Start small.<br /><span>Make it yours.</span></h2>
+          <p>
+            Build from pieces that are easy to understand and satisfying to rearrange.
+            The best part is what happens after someone else joins in.
+          </p>
+          <div class="qblock-stack" aria-hidden="true"><i></i><i></i><i></i></div>
+        </div>
+      </section>
+
+      <section class="qblock-section qblock-community" id="community" aria-labelledby="community-title">
+        <div class="qblock-community-panel">
+          <div>
+            <p class="qblock-section-label">Bring your people</p>
+            <h2 id="community-title">The fun gets better when it travels.</h2>
+            <p>Join the QBLOCK Discord to share what you are making, swap sparks, and help shape what comes next.</p>
+          </div>
+          <div class="qblock-community-side">
+            <p>Open invite / Always a work in progress</p>
+            <a class="qblock-button qblock-button-dark" href="#download">Join the Discord <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+      </section>
+
+      <section class="qblock-section qblock-availability" id="download" aria-labelledby="download-title">
+        <div>
+          <p class="qblock-section-label">Mobile availability coming soon</p>
+          <h2 id="download-title">Take the next move with you.</h2>
+          <p class="qblock-availability-copy">QBLOCK is on its way to mobile. Leave the tab open — we will let you know when it is ready to play.</p>
+        </div>
+        <div class="qblock-store-actions">
+          <button class="qblock-button qblock-button-light qblock-store-button" type="button" data-store="App Store">
+            <span aria-hidden="true">◆</span><span><small>Available soon on</small><strong>App Store</strong></span>
+          </button>
+          <button class="qblock-button qblock-button-light qblock-store-button" type="button" data-store="Play Store">
+            <span aria-hidden="true">▶</span><span><small>Available soon on</small><strong>Play Store</strong></span>
+          </button>
+        </div>
+      </section>
+
+      <footer class="qblock-footer">
+        <div class="qblock-footer-inner">
+          <a class="qblock-brand" href="#top" aria-label="QBLOCK home">
+            <i class="qblock-mark" aria-hidden="true"></i>
+            QBLOCK
+          </a>
+          <span class="qblock-footer-note">Play, create, connect, express.</span>
+          <div class="qblock-footer-links">
+            <a href="#why">About</a>
+            <a href="#community">Discord</a>
+            <a href="#download">Mobile</a>
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="/qblock.js" defer></script>
   </body>
 </html>
