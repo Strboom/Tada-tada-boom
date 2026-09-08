@@ -147,12 +147,29 @@ body {
 }
 
 .qblock-community-side {
-  border-color: rgba(255, 84, 43, .2) !important;
-  background: rgba(255, 255, 255, .72) !important;
+  padding: 24px !important;
+  border-color: #dedfdd !important;
+  border-radius: 16px !important;
+  background: #fbfbfa !important;
+  box-shadow: 0 10px 24px rgba(25, 26, 30, .05), inset 0 1px #fff !important;
 }
 
 .qblock-community-side p {
-  color: #d94120 !important;
+  margin: 0 0 20px !important;
+  color: #74777c !important;
+  font-family: 'DM Mono', monospace !important;
+  font-size: .64rem !important;
+  letter-spacing: .08em !important;
+  line-height: 1.4 !important;
+  text-transform: uppercase !important;
+}
+
+.qblock-community-side .qblock-button {
+  width: 100% !important;
+  min-height: 58px !important;
+  justify-content: space-between !important;
+  border-radius: 11px !important;
+  padding-inline: 17px !important;
 }
 
 .qblock-store-button {
