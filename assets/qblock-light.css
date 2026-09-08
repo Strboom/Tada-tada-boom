@@ -409,3 +409,69 @@ body {
     max-width: none !important;
   }
 }
+
+/* Shared action-button finish, based on the supplied outlined/animated reference. */
+.qblock-nav-cta,
+.qblock-button:not(.qblock-store-button) {
+  position: relative !important;
+  isolation: isolate !important;
+  border: 1px solid #191a1e !important;
+  border-radius: 10px !important;
+  box-shadow: 0 3px 0 #191a1e !important;
+  transition:
+    transform .18s ease,
+    box-shadow .18s ease,
+    background-color .18s ease,
+    color .18s ease !important;
+}
+
+.qblock-nav-cta::before,
+.qblock-button:not(.qblock-store-button)::before {
+  content: '' !important;
+  position: absolute !important;
+  z-index: 0 !important;
+  inset: 3px -4px -4px 3px !important;
+  border: 1px solid rgba(25, 26, 30, .24) !important;
+  border-radius: inherit !important;
+  pointer-events: none !important;
+  transition: inset .18s ease, border-color .18s ease !important;
+}
+
+.qblock-nav-cta:hover,
+.qblock-button:not(.qblock-store-button):hover {
+  transform: translateY(-2px) !important;
+  box-shadow: 0 5px 0 #191a1e !important;
+}
+
+.qblock-nav-cta:hover::before,
+.qblock-button:not(.qblock-store-button):hover::before {
+  inset: 2px -3px -3px 2px !important;
+  border-color: rgba(255, 84, 43, .5) !important;
+}
+
+.qblock-nav-cta:active,
+.qblock-button:not(.qblock-store-button):active {
+  transform: translate(1px, 1px) !important;
+  box-shadow: 0 1px 0 #191a1e !important;
+}
+
+.qblock-button:not(.qblock-store-button) > span[aria-hidden],
+.qblock-nav-cta > span[aria-hidden] {
+  display: inline-block !important;
+  transition: transform .18s ease !important;
+}
+
+.qblock-button:not(.qblock-store-button):hover > span[aria-hidden],
+.qblock-nav-cta:hover > span[aria-hidden] {
+  transform: translate(3px, -2px) !important;
+}
+
+.qblock-button-dark {
+  border-color: #191a1e !important;
+  background: #191a1e !important;
+}
+
+.qblock-button-light {
+  border-color: #191a1e !important;
+  background: #fff !important;
+}
