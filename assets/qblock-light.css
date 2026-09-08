@@ -242,6 +242,30 @@ body {
   font-size: .82rem !important;
 }
 
+.qblock-store-icon {
+  display: grid !important;
+  place-items: center !important;
+}
+
+.qblock-store-icon svg {
+  display: block !important;
+  width: 21px !important;
+  height: 21px !important;
+}
+
+.qblock-apple-icon svg {
+  fill: currentColor !important;
+}
+
+.qblock-play-icon {
+  background: #f1f2f3 !important;
+}
+
+.qblock-store-button > span:last-child {
+  min-width: 0 !important;
+  overflow: hidden !important;
+}
+
 .qblock-store-button small {
   color: #8b8e92 !important;
   font-size: .59rem !important;
@@ -257,11 +281,22 @@ body {
 
 @media (max-width: 850px) {
   .qblock-availability {
+    grid-template-columns: minmax(0, 1fr) !important;
+    align-items: start !important;
     padding: 47px !important;
   }
 
   .qblock-store-actions {
+    grid-template-columns: minmax(0, 1fr) !important;
+    width: 100% !important;
     min-width: 0 !important;
+    justify-self: stretch !important;
+  }
+
+  .qblock-store-button {
+    width: 100% !important;
+    min-width: 0 !important;
+    justify-content: flex-start !important;
   }
 }
 
