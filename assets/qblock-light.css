@@ -506,3 +506,40 @@ body {
 .qblock-store-button.qblock-button-light strong {
   color: #fff !important;
 }
+
+/* Let the community message read in one clear vertical sequence. */
+.qblock-community-panel {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  gap: 26px !important;
+}
+
+.qblock-community-panel > div:first-child {
+  width: 100% !important;
+  max-width: 760px !important;
+}
+
+.qblock-community-side {
+  display: flex !important;
+  flex-direction: column !important;
+  align-items: flex-start !important;
+  width: 100% !important;
+  gap: 16px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  border: 0 !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
+.qblock-community-side p {
+  max-width: none !important;
+  margin: 0 !important;
+}
+
+.qblock-community-side .qblock-button {
+  width: auto !important;
+  max-width: 100% !important;
+  min-width: 230px !important;
+}
