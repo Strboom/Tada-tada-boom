@@ -475,3 +475,34 @@ body {
   border-color: #191a1e !important;
   background: #fff !important;
 }
+
+/* Store badges intentionally stay dark; do not let the generic light-button
+   treatment hide their white labels and Apple mark. */
+.qblock-store-button.qblock-button-light,
+.qblock-store-button.qblock-button-light:hover,
+.qblock-store-button.qblock-button-light:focus-visible {
+  color: #fff !important;
+  border-color: #191a1e !important;
+  background: #191a1e !important;
+  box-shadow: 0 9px 20px rgba(25, 26, 30, .16) !important;
+}
+
+.qblock-store-button.qblock-button-light:hover {
+  border-color: #303136 !important;
+  background: #303136 !important;
+  box-shadow: 0 12px 24px rgba(25, 26, 30, .2) !important;
+}
+
+.qblock-store-button.qblock-button-light > span:first-child,
+.qblock-store-button.qblock-button-light .qblock-play-icon {
+  color: #fff !important;
+  background: transparent !important;
+}
+
+.qblock-store-button.qblock-button-light small {
+  color: #c2c4c7 !important;
+}
+
+.qblock-store-button.qblock-button-light strong {
+  color: #fff !important;
+}
