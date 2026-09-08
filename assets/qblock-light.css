@@ -182,3 +182,96 @@ body {
     border-color: #e2e3e1 !important;
   }
 }
+
+/* Remove the last ornamental shapes so the page reads as product, not collage. */
+.qblock-hero-note span,
+.qblock-device-stage::before,
+.qblock-device-stage::after,
+.qblock-creation-panel::after,
+.qblock-stack {
+  display: none !important;
+}
+
+.qblock-hero-note {
+  gap: 0 !important;
+}
+
+.qblock-availability {
+  gap: 52px !important;
+  padding: 64px !important;
+  background: #fff !important;
+  border-color: #dedfdd !important;
+  box-shadow: 0 20px 50px rgba(31, 30, 27, .07), inset 0 1px #fff !important;
+}
+
+.qblock-store-actions {
+  display: grid !important;
+  grid-template-columns: repeat(2, minmax(170px, 1fr)) !important;
+  gap: 12px !important;
+  min-width: 390px !important;
+}
+
+.qblock-store-button {
+  display: flex !important;
+  align-items: center !important;
+  gap: 12px !important;
+  min-height: 76px !important;
+  padding: 13px 15px !important;
+  border: 1px solid #d9dad8 !important;
+  border-radius: 14px !important;
+  background: #fbfbfa !important;
+  box-shadow: 0 8px 20px rgba(25, 26, 30, .05), inset 0 1px #fff !important;
+  transition: border-color .2s ease, box-shadow .2s ease, transform .2s ease !important;
+}
+
+.qblock-store-button:hover {
+  border-color: rgba(255, 84, 43, .55) !important;
+  box-shadow: 0 12px 24px rgba(25, 26, 30, .08), inset 0 1px #fff !important;
+  transform: translateY(-2px) !important;
+}
+
+.qblock-store-button > span:first-child {
+  display: grid !important;
+  width: 38px !important;
+  height: 38px !important;
+  flex: 0 0 38px !important;
+  place-items: center !important;
+  border-radius: 11px !important;
+  color: #fff !important;
+  background: #191a1e !important;
+  font-size: .82rem !important;
+}
+
+.qblock-store-button small {
+  color: #8b8e92 !important;
+  font-size: .59rem !important;
+  letter-spacing: .03em !important;
+}
+
+.qblock-store-button strong {
+  margin-top: 4px !important;
+  color: #191a1e !important;
+  font-size: .95rem !important;
+  letter-spacing: -.02em !important;
+}
+
+@media (max-width: 850px) {
+  .qblock-availability {
+    padding: 47px !important;
+  }
+
+  .qblock-store-actions {
+    min-width: 0 !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .qblock-availability {
+    padding: 34px 24px !important;
+  }
+
+  .qblock-store-actions {
+    grid-template-columns: 1fr !important;
+    width: 100% !important;
+  }
+}
