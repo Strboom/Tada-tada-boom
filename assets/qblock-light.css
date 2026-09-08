@@ -281,6 +281,16 @@ body {
 .qblock-store-button > span:last-child {
   min-width: 0 !important;
   overflow: hidden !important;
+  display: block !important;
+  text-align: left !important;
+}
+
+.qblock-store-button::after {
+  content: '↗' !important;
+  display: block !important;
+  color: #8b8e92 !important;
+  font-size: 1rem !important;
+  line-height: 1 !important;
 }
 
 .qblock-store-button small {
@@ -325,5 +335,40 @@ body {
   .qblock-store-actions {
     grid-template-columns: 1fr !important;
     width: 100% !important;
+  }
+}
+
+/* Keep both platform actions on one exact alignment system. */
+.qblock-availability {
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 390px) !important;
+  align-items: center !important;
+}
+
+.qblock-store-actions {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  gap: 10px !important;
+}
+
+.qblock-store-button {
+  display: grid !important;
+  grid-template-columns: 40px minmax(0, 1fr) 18px !important;
+  align-items: center !important;
+  width: 100% !important;
+  height: 76px !important;
+  min-height: 76px !important;
+  margin: 0 !important;
+}
+
+@media (max-width: 850px) {
+  .qblock-availability {
+    grid-template-columns: minmax(0, 1fr) !important;
+    gap: 28px !important;
+  }
+
+  .qblock-store-actions {
+    max-width: none !important;
   }
 }
