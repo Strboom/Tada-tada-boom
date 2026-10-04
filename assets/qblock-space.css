@@ -1,0 +1,348 @@
+html,
+body {
+  background: #08090a !important;
+}
+
+.qblock-page {
+  --q-ink: #f3f0ea !important;
+  --q-muted: #96999d !important;
+  --q-line: rgba(255, 255, 255, .12) !important;
+  --q-paper: #08090a !important;
+  --q-soft: #121416 !important;
+  --q-orange: #ff6538 !important;
+  --q-orange-dark: #df4226 !important;
+  --q-peach: rgba(255, 101, 56, .12) !important;
+  --q-yellow: #ffb56f !important;
+  position: relative;
+  isolation: isolate;
+  background:
+    radial-gradient(circle at 79% 17%, rgba(255, 78, 46, .11), transparent 24rem),
+    radial-gradient(circle at 10% 62%, rgba(255, 190, 111, .045), transparent 28rem),
+    #08090a !important;
+  color: #f3f0ea !important;
+}
+
+.qblock-page::before,
+.qblock-page::after {
+  position: fixed;
+  z-index: -1;
+  inset: 0;
+  content: "";
+  pointer-events: none;
+  background-repeat: repeat;
+}
+
+.qblock-page::before {
+  opacity: .28;
+  background-image:
+    radial-gradient(circle at 19px 31px, rgba(255, 250, 232, .9) 0 1px, transparent 1.6px),
+    radial-gradient(circle at 88px 117px, rgba(255, 190, 111, .8) 0 .8px, transparent 1.5px),
+    radial-gradient(circle at 171px 63px, rgba(255, 250, 232, .75) 0 .8px, transparent 1.5px),
+    radial-gradient(circle at 221px 183px, rgba(255, 250, 232, .8) 0 1px, transparent 1.7px);
+  background-size: 257px 223px;
+  animation: qblock-stars-brighten 5.8s ease-in-out infinite alternate;
+}
+
+.qblock-page::after {
+  opacity: .16;
+  background-image:
+    radial-gradient(circle at 53px 79px, rgba(255, 238, 207, .8) 0 .8px, transparent 1.5px),
+    radial-gradient(circle at 148px 208px, rgba(255, 153, 111, .8) 0 1px, transparent 1.7px),
+    radial-gradient(circle at 271px 38px, rgba(255, 250, 232, .8) 0 .8px, transparent 1.5px);
+  background-size: 337px 281px;
+  animation: qblock-stars-dim 7.2s ease-in-out -2.6s infinite alternate;
+}
+
+@keyframes qblock-stars-brighten {
+  from { opacity: .13; }
+  to { opacity: .34; }
+}
+
+@keyframes qblock-stars-dim {
+  from { opacity: .08; }
+  to { opacity: .22; }
+}
+
+.qblock-nav {
+  border-color: rgba(255, 255, 255, .12) !important;
+  background: rgba(13, 15, 16, .84) !important;
+  box-shadow: 0 16px 42px rgba(0, 0, 0, .3), inset 0 1px rgba(255, 255, 255, .06) !important;
+}
+
+.qblock-brand,
+.qblock-nav-links a,
+.qblock-menu-button {
+  color: #f3f0ea !important;
+}
+
+.qblock-brand-avatar {
+  border-color: rgba(255, 137, 99, .58) !important;
+  background: #111315 !important;
+  box-shadow: 0 6px 18px rgba(255, 78, 46, .2) !important;
+}
+
+.qblock-nav-links a:not(.qblock-nav-cta) {
+  color: #a6a6aa !important;
+}
+
+.qblock-nav-cta {
+  color: #1a0d09 !important;
+  background: #ff6538 !important;
+  border-color: #ff6538 !important;
+}
+
+.qblock-hero::before {
+  background-image:
+    linear-gradient(rgba(255, 255, 255, .045) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, .045) 1px, transparent 1px) !important;
+  opacity: .24 !important;
+}
+
+.qblock-hero h1,
+.qblock-section h2,
+.qblock-creation-panel h2,
+.qblock-community-panel h2,
+.qblock-availability h2 {
+  color: #f3f0ea !important;
+}
+
+#hero-title,
+#create-title,
+#community-title,
+#download-title {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif !important;
+  font-weight: 500 !important;
+  letter-spacing: -.045em !important;
+}
+
+.qblock-hero h1 em,
+.qblock-creation-panel h2 span,
+.qblock-kicker,
+.qblock-section-label {
+  color: #ff8058 !important;
+}
+
+.qblock-hero-copy,
+.qblock-creation-panel > p,
+.qblock-community-panel > div > p,
+.qblock-availability-copy {
+  color: #a1a3a6 !important;
+}
+
+.qblock-button-dark {
+  color: #1a0d09 !important;
+  background: #ff6538 !important;
+  border-color: #ff6538 !important;
+  box-shadow: 0 9px 24px rgba(255, 78, 46, .2) !important;
+}
+
+.qblock-button-dark:hover {
+  color: #1a0d09 !important;
+  background: #ff8058 !important;
+}
+
+.qblock-button-light {
+  color: #f3f0ea !important;
+  background: rgba(255, 255, 255, .055) !important;
+  border-color: rgba(255, 255, 255, .17) !important;
+}
+
+.qblock-button-light:hover {
+  color: #fff !important;
+  background: rgba(255, 101, 56, .12) !important;
+  border-color: rgba(255, 101, 56, .52) !important;
+}
+
+.qblock-device-stage::before {
+  background: radial-gradient(circle, rgba(255, 101, 56, .17), transparent 68%) !important;
+}
+
+.qblock-device-stage::after {
+  display: none !important;
+}
+
+.qblock-phone-wrap {
+  filter: drop-shadow(26px 34px 26px rgba(0, 0, 0, .44)) !important;
+}
+
+.qblock-phone-wrap img {
+  border-color: #181a1d !important;
+  background: #111315 !important;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, .13) !important;
+}
+
+.qblock-creation-panel,
+.qblock-community-panel,
+.qblock-availability {
+  color: #f3f0ea !important;
+  border-color: rgba(255, 255, 255, .11) !important;
+  border-radius: 20px !important;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, .075), rgba(255, 255, 255, .02) 55%),
+    #111315 !important;
+  box-shadow: inset 0 1px rgba(255, 255, 255, .06), 0 24px 58px rgba(0, 0, 0, .28) !important;
+}
+
+.qblock-creation-panel {
+  background:
+    radial-gradient(circle at 84% 40%, rgba(255, 84, 43, .1), transparent 20rem),
+    linear-gradient(145deg, rgba(255, 255, 255, .075), rgba(255, 255, 255, .02) 55%),
+    #111315 !important;
+}
+
+.qblock-community-side {
+  border-color: rgba(255, 255, 255, .12) !important;
+  background: rgba(255, 255, 255, .035) !important;
+  box-shadow: inset 0 1px rgba(255, 255, 255, .04) !important;
+}
+
+.qblock-community-side p {
+  color: #9a9da0 !important;
+}
+
+.qblock-availability {
+  gap: 36px !important;
+  background:
+    radial-gradient(circle at 90% 40%, rgba(255, 101, 56, .12), transparent 36%),
+    #111315 !important;
+}
+
+.qblock-store-actions {
+  display: flex !important;
+  flex-direction: column !important;
+  width: 100% !important;
+  max-width: 390px !important;
+  min-width: 0 !important;
+  gap: 10px !important;
+}
+
+.qblock-store-button {
+  display: grid !important;
+  grid-template-columns: 38px minmax(0, 1fr) !important;
+  align-items: center !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  min-height: 76px !important;
+  padding: 12px 15px !important;
+  overflow: hidden !important;
+  color: #18191d !important;
+  border: 1px solid rgba(255, 255, 255, .78) !important;
+  border-radius: 14px !important;
+  background: #f7f8fa !important;
+  box-shadow: 0 9px 22px rgba(0, 0, 0, .22) !important;
+  transition: transform .2s ease, box-shadow .2s ease, border-color .2s ease !important;
+}
+
+.qblock-store-button:hover {
+  transform: translateY(-2px) !important;
+  border-color: #ff8058 !important;
+  background: #fff !important;
+  box-shadow: 0 13px 26px rgba(0, 0, 0, .28) !important;
+}
+
+.qblock-store-button > span:first-child {
+  display: grid !important;
+  width: 38px !important;
+  height: 38px !important;
+  place-items: center !important;
+  color: #08090a !important;
+  background: transparent !important;
+}
+
+.qblock-store-icon svg {
+  display: block !important;
+  width: 23px !important;
+  height: 23px !important;
+}
+
+.qblock-apple-icon {
+  color: #050505 !important;
+}
+
+.qblock-apple-icon svg {
+  fill: currentColor !important;
+}
+
+.qblock-play-icon {
+  border-radius: 8px;
+  background: #eef0f3 !important;
+}
+
+.qblock-store-button > span:last-child {
+  display: block !important;
+  min-width: 0 !important;
+  text-align: left !important;
+}
+
+.qblock-store-button small {
+  display: block !important;
+  color: #656970 !important;
+  font-size: .62rem !important;
+  letter-spacing: .02em !important;
+}
+
+.qblock-store-button strong {
+  display: block !important;
+  margin-top: 2px !important;
+  color: #18191d !important;
+  font-size: 1rem !important;
+  letter-spacing: -.02em !important;
+}
+
+.qblock-store-button .qblock-store-coming-soon {
+  margin-top: 3px !important;
+  color: #a1412d !important;
+  font-size: .58rem !important;
+  font-weight: 600 !important;
+  letter-spacing: .08em !important;
+  text-transform: uppercase !important;
+}
+
+.qblock-footer {
+  border-top-color: rgba(255, 255, 255, .11) !important;
+  background: #08090a !important;
+}
+
+.qblock-footer-note,
+.qblock-footer-links a {
+  color: #85888c !important;
+}
+
+.qblock-footer-links a:hover {
+  color: #ff8058 !important;
+}
+
+@media (max-width: 850px) {
+  .qblock-availability {
+    grid-template-columns: minmax(0, 1fr) !important;
+    align-items: start !important;
+  }
+
+  .qblock-store-actions {
+    max-width: none !important;
+  }
+
+  .qblock-nav-links {
+    border-color: rgba(255, 255, 255, .12) !important;
+    background: #121416 !important;
+    box-shadow: 0 16px 34px rgba(0, 0, 0, .35) !important;
+  }
+}
+
+@media (max-width: 560px) {
+  .qblock-availability {
+    display: block !important;
+    padding: 34px 24px 90px !important;
+  }
+
+  .qblock-store-actions {
+    margin-top: 33px !important;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .qblock-page::before,
+  .qblock-page::after {
+    animation: none !important;
+  }
+}
