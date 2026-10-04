@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>QBLOCK — Make your next move</title>
+    <title>QBLOCK: Make your next move</title>
     <meta name="description" content="QBLOCK is a block-built playground for people who play, create, connect, and express." />
     <meta name="robots" content="index, follow" />
     <link rel="canonical" href="https://qblock.site/" />
-    <meta property="og:title" content="QBLOCK — Make your next move" />
+    <meta property="og:title" content="QBLOCK: Make your next move" />
     <meta property="og:description" content="A place to jump in, build out, and find the people who make an idea more fun." />
     <meta property="og:type" content="website" />
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="QBLOCK — Make your next move" />
+    <meta name="twitter:title" content="QBLOCK: Make your next move" />
     <meta name="twitter:description" content="A block-built playground made for participation." />
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/assets/qblock.css" />
     <link rel="stylesheet" href="/assets/qblock-overrides.css" />
-    <link rel="stylesheet" href="/assets/qblock-light.css?v=5" />
+    <link rel="stylesheet" href="/assets/qblock-night.css?v=1" />
   </head>
   <body>
     <main class="qblock-page" id="top">
@@ -32,7 +32,7 @@
           <div class="qblock-nav-links" id="primary-navigation">
             <a href="#create">How it works</a>
             <a href="#community">Community</a>
-            <a href="#download" class="qblock-nav-cta">Get the feeling <span aria-hidden="true">→</span></a>
+            <a href="#download" class="qblock-nav-cta">Get early access <span aria-hidden="true">↗</span></a>
           </div>
           <button class="qblock-menu-button" id="menu-button" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="primary-navigation">
             <span aria-hidden="true">☰</span>
@@ -42,11 +42,8 @@
 
       <section class="qblock-hero" aria-labelledby="hero-title">
         <div class="qblock-hero-grid">
-          <div>
-            <div class="qblock-kicker qblock-reveal qblock-reveal-delay-1">
-              <i class="qblock-kicker-dot" aria-hidden="true"></i>
-              A block-built playground
-            </div>
+          <div class="qblock-hero-copy-column">
+            <p class="qblock-kicker qblock-reveal qblock-reveal-delay-1">Your imagination is premium</p>
             <h1 id="hero-title" class="qblock-reveal qblock-reveal-delay-1">
               Make your
               <em>next move.</em>
@@ -56,27 +53,43 @@
               QBLOCK is made for participation.
             </p>
             <div class="qblock-hero-actions qblock-reveal qblock-reveal-delay-3">
-              <a class="qblock-button qblock-button-dark" href="#create">See how it works <span aria-hidden="true">↘</span></a>
+              <a class="qblock-button qblock-button-dark" href="#download">Get early access <span aria-hidden="true">↗</span></a>
               <a class="qblock-button qblock-button-light" href="#community">Meet the community <span aria-hidden="true">◎</span></a>
             </div>
             <div class="qblock-hero-note qblock-reveal qblock-reveal-delay-3">
-              <span aria-hidden="true"></span>
-              Early access is opening up
+              A block-built playground
             </div>
           </div>
 
           <div class="qblock-device-stage qblock-reveal qblock-reveal-delay-2">
-            <div class="qblock-corner-label qblock-mono">Scroll to explore / 001</div>
-            <div class="qblock-orbit qblock-orbit-top">
-              <span class="qblock-orbit-mark" aria-hidden="true">✦</span>
-              Your ideas, in blocks
+            <div class="qblock-night-decor" aria-hidden="true">
+              <svg class="qblock-night-web" viewBox="0 0 150 150">
+                <path d="M150 0H14M150 0v140M150 0 38 40M150 0 72 76M150 0 113 111M150 0 0 20M150 0 28 78M150 0 77 127" />
+                <path d="M126 8c-1 10-1 20 0 30 8-1 16-1 24 0M99 19c-2 15-2 30 0 45 17-2 34-2 51 0M70 29c-3 21-3 42 0 63 27-3 54-3 80 0M40 39c-4 28-4 56 0 84 36-4 73-4 110 0M14 49c-3 29-3 58 0 87" />
+              </svg>
+              <svg class="qblock-night-bat qblock-night-bat-one" viewBox="0 0 32 22">
+                <path d="M16 7C12 2 6 2 2 5c2 4 2 7 0 10 5-1 9 0 12 4 1-3 2-5 2-7 0 2 1 4 2 7 3-4 7-5 12-4-2-3-2-6 0-10-4-3-10-3-14 2Z" />
+              </svg>
+              <svg class="qblock-night-bat qblock-night-bat-two" viewBox="0 0 32 22">
+                <path d="M16 7C12 2 6 2 2 5c2 4 2 7 0 10 5-1 9 0 12 4 1-3 2-5 2-7 0 2 1 4 2 7 3-4 7-5 12-4-2-3-2-6 0-10-4-3-10-3-14 2Z" />
+              </svg>
+              <svg class="qblock-night-bat qblock-night-bat-three" viewBox="0 0 32 22">
+                <path d="M16 7C12 2 6 2 2 5c2 4 2 7 0 10 5-1 9 0 12 4 1-3 2-5 2-7 0 2 1 4 2 7 3-4 7-5 12-4-2-3-2-6 0-10-4-3-10-3-14 2Z" />
+              </svg>
+              <svg class="qblock-night-bat qblock-night-bat-four" viewBox="0 0 32 22">
+                <path d="M16 7C12 2 6 2 2 5c2 4 2 7 0 10 5-1 9 0 12 4 1-3 2-5 2-7 0 2 1 4 2 7 3-4 7-5 12-4-2-3-2-6 0-10-4-3-10-3-14 2Z" />
+              </svg>
+              <svg class="qblock-night-pumpkin" viewBox="0 0 42 36">
+                <path d="M20 7c-2-4-7-5-10-1-6 0-10 5-10 12 0 11 8 16 21 16s21-5 21-16c0-7-4-12-10-12-3-4-8-3-10 1-1-3-1-5 1-7h-6c2 3 2 5 3 7Z" />
+                <path class="qblock-night-face" d="m10 14 6 2-5 4Zm22 0-6 2 5 4Zm-16 9h10l-5 5Z" />
+              </svg>
+              <svg class="qblock-night-ghost" viewBox="0 0 32 36">
+                <path d="M16 1C7 1 2 7 2 16v17l7-4 7 4 7-4 7 4V16C30 7 25 1 16 1Z" />
+                <path class="qblock-night-face" d="M10 14a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm12 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4Zm-9 9c2-2 4-2 6 0" />
+              </svg>
             </div>
             <div class="qblock-phone-wrap">
               <img src="/assets/qblock-phone.png" alt="QBLOCK mobile app preview" />
-            </div>
-            <div class="qblock-orbit qblock-orbit-bottom">
-              <span class="qblock-orbit-mark" aria-hidden="true">◎</span>
-              Built to share
             </div>
           </div>
         </div>
@@ -114,8 +127,7 @@
             <p>Come see what’s being built, share an idea, and help shape what comes next.</p>
           </div>
           <div class="qblock-community-side">
-            <p>Community / Open invite</p>
-            <a class="qblock-button qblock-button-dark" href="#download">Join QBLOCK on Discord <span aria-hidden="true">↗</span></a>
+            <a class="qblock-button qblock-button-dark" href="https://discord.gg/FvhH7e8uA9" target="_blank" rel="noopener noreferrer">Join QBLOCK on Discord <span aria-hidden="true">↗</span></a>
           </div>
         </div>
       </section>
@@ -124,7 +136,7 @@
         <div>
           <p class="qblock-section-label">Mobile availability coming soon</p>
           <h2 id="download-title">Take the next move with you.</h2>
-          <p class="qblock-availability-copy">QBLOCK is on its way to mobile. Leave the tab open — we will let you know when it is ready to play.</p>
+          <p class="qblock-availability-copy">QBLOCK is on its way to mobile. Leave the tab open, and we will let you know when it is ready to play.</p>
         </div>
         <div class="qblock-store-actions">
           <button class="qblock-button qblock-button-light qblock-store-button" type="button" data-store="App Store">
@@ -133,7 +145,7 @@
                 <path d="M17.05 12.54c-.02-2.25 1.84-3.33 1.92-3.38a4.12 4.12 0 0 0-3.25-1.76c-1.37-.14-2.68.81-3.37.81-.7 0-1.78-.79-2.93-.77a4.32 4.32 0 0 0-3.64 2.22c-1.57 2.72-.4 6.73 1.1 8.93.75 1.08 1.62 2.28 2.77 2.24 1.11-.05 1.53-.72 2.88-.72 1.34 0 1.72.72 2.88.69 1.2-.02 1.95-1.08 2.68-2.16a8.8 8.8 0 0 0 1.21-2.5 3.88 3.88 0 0 1-2.33-3.6ZM14.84 5.96A3.92 3.92 0 0 0 15.73 3a4.04 4.04 0 0 0-2.6 1.35 3.75 3.75 0 0 0-.91 2.86 3.34 3.34 0 0 0 2.62-1.25Z"/>
               </svg>
             </span>
-            <span><small>Download on the</small><strong>App Store</strong></span>
+            <span><small>Download on the</small><strong>App Store</strong><small class="qblock-store-coming-soon">Coming soon</small></span>
           </button>
           <button class="qblock-button qblock-button-light qblock-store-button" type="button" data-store="Play Store">
             <span class="qblock-store-icon qblock-play-icon" aria-hidden="true">
@@ -144,7 +156,7 @@
                 <path fill="#EA4335" d="M2.7 2.06c.68-.08 1.58.32 2.6.9l10.86 6.08-3.06 2.92-10.4-9.9Z"/>
               </svg>
             </span>
-            <span><small>Get it on</small><strong>Google Play</strong></span>
+            <span><small>Get it on</small><strong>Google Play</strong><small class="qblock-store-coming-soon">Coming soon</small></span>
           </button>
         </div>
       </section>
@@ -158,7 +170,7 @@
           <span class="qblock-footer-note">Play, create, connect, express.</span>
           <div class="qblock-footer-links">
             <a href="#create">How it works</a>
-            <a href="#community">Discord</a>
+            <a href="https://discord.gg/FvhH7e8uA9" target="_blank" rel="noopener noreferrer">Discord</a>
             <a href="#download">Mobile</a>
           </div>
         </div>
